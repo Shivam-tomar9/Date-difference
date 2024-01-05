@@ -1,0 +1,14 @@
+<td>
+@php
+$currentDate=now();
+$startDate=$coupon->start_date;
+$endDate=$coupon->end_date;
+
+$remainingDays=max(0,$currentDate->diffInDays($endDate);
+
+@endphp
+{{remainingDays}} days
+@if($remainingDays==0)
+(couponExpired)
+@endif
+</td>
